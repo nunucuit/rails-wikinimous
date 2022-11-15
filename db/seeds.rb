@@ -2,6 +2,12 @@
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
 # Examples:
-#
+10.times do
+  article = Article.new(
+    title: Faker::Fantasy::Tolkien.character,
+    content: Faker::Fantasy::Tolkien.poem
+  )
+  article.save!
+end
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)

@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+ #link{
+  color:rgba(1, 4, 5, 0.848);
+  font-size: 20px;
+ }
+
+ ul{
+  color:azure;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+ }
+
+.container{
+  width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 120px;
+  background-color: bisque;
+  border-radius: 15px;
+}
+
+a{
+  color:rgb(214, 192, 21);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ a:hover{
+  color:rgb(214, 192, 21);
+  opacity: 0.5;
+ }

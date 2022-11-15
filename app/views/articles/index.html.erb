@@ -1,0 +1,9 @@
+<h1> Middle-Earth </h1>
+<div class="container">
+<ul>
+  <% @articles.each do |article| %>
+    <li id="link"> <%= link_to article.title, article_path(article) %> <p> <i class="fa-solid fa-trash"></i> <%= link_to "" , article_path(article), data: { turbo_method: 'delete', turbo_confirm: 'Are you sure?' }  %> </i> </p>  </li>
+  <%end %>
+</ul>
+<%= link_to "Add a character and his quote", new_article_path %>
+</div>
